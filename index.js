@@ -4,8 +4,6 @@ import { Client, GatewayIntentBits, Events } from 'discord.js';
 
 const TOKEN = process.env.DISCORD_TOKEN;
 const CHANNEL_ID = process.env.CHANNEL_ID;
-const AFFIRM_TIME = process.env.AFFIRM_TIME || '08:00';
-const TZ = process.env.TZ || 'Asia/Jakarta';
 
 const AFFIRMATIONS = [
   "Aku cukup dan aku berharga 🌿",
@@ -58,4 +56,5 @@ function randomAffirmation() {
 	console.log(`✅ Affirmasi terkirim: ${msg}`);
 	process.exit(0);
 })();
+
 
