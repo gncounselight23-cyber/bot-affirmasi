@@ -56,5 +56,6 @@ function randomAffirmation() {
 	const msg = randomAffirmation();
 	await channel.send(`🌸 **Affirmasi Harian:**\n> ${msg}`);
 	console.log(`✅ Affirmasi terkirim: ${msg}`);
-	process.exit(1);
+	process.exit(0);
 })();
+
